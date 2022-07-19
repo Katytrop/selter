@@ -1,0 +1,71 @@
+@import 'base/_variables'
+@import 'base/_animation'
+
+@font-face 
+	font-family: "Arial"
+	src: url("../fonts/ARIAL.TTF")
+	font-weight: 400
+		
+@font-face 
+	font-family: "Arial"
+	src: url("../fonts/ARIALI 1.TTF")
+	font-weight: italic
+		
+@font-face 
+	font-family: "Georgia"
+	src: url("../fonts/georgia.ttf")
+	font-weight: 400
+		
+@font-face 
+	font-family: "Georgia"
+	src: url("../fonts/georgiab.ttf")
+	font-weight: bold
+		
+*
+	font-family: 'Georgia', serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	position: relative
+	color: #292929
+
+.container
+	position: relative
+	max-width: 1200px
+	margin: 0 auto
+
+.hamburger 
+	position: absolute
+	top: 19px
+	right: 43px
+	height: 22px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-start
+	cursor: pointer
+	span 
+		display: block
+		width: 30px
+		height: 2px
+		background: $main
+.disable_scroll
+	position: relative
+	overflow: hidden
+	height: 100vh
+	left: 0
+	top: 0
+	width: 100%
+
+@import 'blocks/_promo'
+@import 'blocks/_buttons'
+@import 'blocks/_about'
+@import 'blocks/_titles'
+@import 'blocks/_pets'
+@import 'blocks/_help'
+@import 'blocks/_donation'
+@import 'blocks/_footer'
+
+@import 'base/_media-main'
