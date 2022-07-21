@@ -1,0 +1,136 @@
+@media (max-width: 1279px)
+	.container
+		max-width: 708px
+	.pets
+		padding-bottom: 77px
+		&__catalog
+			grid-template-columns: repeat(2, 270px)
+			grid-template-rows: repeat(3, 435px)
+			margin-top: 30px
+		&__card
+			&:first-child, &:last-child
+				display: none
+		&__navigation
+			margin-top: 38px
+		&__modal
+			width: 630px
+			height: 350px
+			&_content
+				padding: 10px 10px 37px 10px
+			&_photo
+				width: 350px
+				height: 350px
+		&__descr
+			font-size: 13px
+			margin-top: 20px
+		&__name
+			margin-top: 10px
+		&__list
+			margin-top: 20px
+	.footer
+		padding-top: 15px
+		&__wrapper
+			grid-template-columns: repeat(2, 302px)
+			grid-template-rows: 234px 310px
+			gap: 80px 38px 
+			padding: 0 34px
+		&__dog
+			grid-column: 1 / 3
+			margin: 0 auto
+@media (max-width: 767px)
+	.container
+		max-width: 300px
+	.header
+		&__menu
+			position: relative
+			width: 320px
+			background-color: #292929
+			height: 823px
+			display: flex
+			flex-direction: column
+			text-align: center
+			padding: 257px 38px
+			transition: all 0.6s
+			z-index: 10
+			&_item
+				width: 243px
+				font-size: 32px
+				a
+					color: #CDCDCD	
+				&.active
+					a
+						color: #FAFAFA			
+	.menu
+		position: fixed
+		top: 0
+		right: 0
+		height: 100vh
+		width: 0
+		z-index: 100
+		visibility: hidden
+		opacity: 0
+		transition: all 0.6s
+		&.active
+			width: 320px
+			visibility: visible
+			opacity: 1
+			transition: all 0.6s
+		&__overlay
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(41, 41, 41, 0.6)
+	.hamburger 
+		display: flex
+		z-index: 111
+		transition: all 0.6s
+		&.active
+			transform: rotate(90deg)
+	.title
+		font-size: 25px
+		&_light
+			margin-top: 0
+			padding: 0 15px
+			text-align: center
+	.pets
+		padding-bottom: 42px
+		padding-top: 160px
+		&__catalog
+			grid-template-columns: 270px
+			gap: 30px
+			margin-top: 42px
+		&__card
+			&:nth-child(even)
+				display: none
+		&__navigation
+			width: 300px
+			margin-top: 42px
+		&__modal
+			width: 240px
+			height: 340px
+			&_photo
+				display: none
+	.footer
+		padding-top: 30px
+		&__wrapper
+			grid-template-columns: 300px
+			grid-template-rows: 219px 222px 280px
+			row-gap: 30px
+			padding: 0
+		&__dog
+			grid-row: 3 / 4
+			grid-column: 1 / 2
+			img
+				height: 100%
+				width: 100%
+				padding-top: 10px
+		&__contacts
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__link 
+			align-items: center
+		&__marker
+			margin-top: 41px

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style-pets.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="header__logo" href="./index.html">
+					<h1 class="header__logo_title">Cozy House</h1>
+					<div class="header__logo_subtitle">Shelter for pets in Boston</div>
+				</a>
+				<nav class="menu">
+					<ul class="header__menu">
+						<li class="header__menu_item"><a href="./index.html">About the shelter</a></li>
+						<li class="header__menu_item active"><a href="#">Our pets</a></li>
+						<li class="header__menu_item"><a href="./index.html#help">Help the shelter</a></li>
+						<li class="header__menu_item"><a href="#contacts">Contacts</a></li>
+					</ul>
+					<div class="menu__overlay"></div>
+				</nav>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="pets">
+		<div class="container">
+			<div class="pets__wrapper">
+				<div class="title title_center">Our friends who <br> are looking for a house</div>
+				<div class="pets__catalog">
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-katrine.png" alt="pet-katrine" class="pets__photo">
+						<div class="pets__name">Katrine</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-jennifer.png" alt="pet-jennifer" class="pets__photo">
+						<div class="pets__name">Jennifer</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-woody.png" alt="pet-woody" class="pets__photo">
+						<div class="pets__name">Woody</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-sophia.png" alt="pets-sophia" class="pets__photo">
+						<div class="pets__name">Sophia</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-timmy.png" alt="pet-timmy" class="pets__photo">
+						<div class="pets__name">Timmy</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-charly.png" alt="pets-charly" class="pets__photo">
+						<div class="pets__name">Charly</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-scarlett.png" alt="pets-scarlet" class="pets__photo">
+						<div class="pets__name">Scarlet</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+					<div class="pets__card" data-pet="">
+						<img src="img/pets-catalog/pets-freddie.png" alt="pets-freddie" class="pets__photo">
+						<div class="pets__name">Freddie</div>
+						<button class="btn btn_catalog">Learn more</button>
+					</div>
+				</div>
+				<div class="pets__navigation">
+					<button class="btn btn_doublePrev btn_nav inactive">&lt;&lt;</button>
+					<button class="btn btn_prev btn_nav inactive">&lt;</button>
+					<button class="btn btn_nav btn_number">1</button>
+					<button class="btn btn_next btn_nav">&gt;</button>
+					<button class="btn btn_doubleNext btn_nav">&gt;&gt;</button>
+				</div>
+				<div class="pets__cover">
+					<div class="pets__modal">
+						<button class="btn btn_modal">&#10006;</button>
+						<img class="pets__modal_photo" src="img/pets-catalog/pets-jennifer.png" alt="pet">
+						<div class="pets__modal_content">
+							<div class="pets__name pets__name_modal">Jennifer</div>
+							<div class="pets__breed">Dog - Labrador</div>
+							<div class="pets__descr">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</div>
+							<ul class="pets__list">
+								<li>Age:<span class="pets__age">2 months</span></li>
+								<li>Inoculations:<span class="pets__inoculations">none</span></li>
+								<li>Diseases:<span class="pets__diseases">none</span></li>
+								<li>Parasites:<span class="pets__parasites">none</span></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+ 	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__contacts">
+					<div class="title title_light">For questions and suggestions</div>
+					<div class="footer__item">				
+						<a href="mailto:email@shelter.com" class="footer__link" target="_blank">
+							<img src="icons/footer/icon-email.svg" alt="mail">
+							email@shelter.com</a>
+					</div>
+					<div class="footer__item">
+						<a href="tel:+136745677554" class="footer__link" target="_blank">
+							<img src="icons/footer/icon-phone.svg" alt="phone">
+							+13 674 567 75 54</a>
+					</div>
+				</div>
+				<div class="footer__locations">
+					<div class="title title_light">We are waiting for your visit</div>
+					<div class="footer__marker">
+						<img src="icons/footer/icon-marker.svg" alt="marker">
+						<a target="_blank" href="https://goo.gl/maps/UC1z5wNd8NSEkoMF8" class="footer__text">1 Central Street, Boston (entrance from the store)</a>
+					</div>
+					<div class="footer__marker">
+						<img src="icons/footer/icon-marker.svg" alt="marker">
+						<a href="https://goo.gl/maps/qpAy3a8pSGeV3gQg9" target="_blank" class="footer__text">18 South Park, London </a>
+					</div>
+				</div>
+				<div class="footer__dog">
+					<img src="img/footer-puppy.png" alt="dog">
+				</div>
+			</div>
+		</div>
+	</footer> 
+
+
+	<script type="module" src="js/script-pets.js"></script>
+</body>
+</html>

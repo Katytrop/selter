@@ -1,0 +1,304 @@
+@import 'base/_variables'
+
+@font-face 
+	font-family: "Arial"
+	src: url("../fonts/ARIAL.TTF")
+	font-weight: 400
+		
+@font-face 
+	font-family: "Arial"
+	src: url("../fonts/ARIALI 1.TTF")
+	font-weight: italic
+		
+@font-face 
+	font-family: "Georgia"
+	src: url("../fonts/georgia.ttf")
+	font-weight: 400
+		
+@font-face 
+	font-family: "Georgia"
+	src: url("../fonts/georgiab.ttf")
+	font-weight: bold
+
+*
+	font-family: 'Georgia', serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	color: #292929
+	background-color: #fff
+
+.container
+	position: relative
+	width: 1200px
+	margin: 0 auto
+
+.header
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 10
+	background-color: #fff
+	&__wrapper
+		min-height: 120px
+		padding: 30px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		width: 186px
+		height: 60px
+		text-align: center
+		text-decoration: none
+		&_title
+			font-weight: 400
+			font-size: 32px
+			color: #545454
+			letter-spacing: 0.06em
+		&_subtitle
+			font-family: 'Arial', sans-serif
+			font-weight: 400
+			font-size: 13px
+			color: #292929
+			margin-top: 10px
+			letter-spacing: 0.1em
+	&__menu
+		display: flex
+		width: 445px
+		justify-content: space-between
+		&_item
+			font-weight: 400
+			font-size: 15px
+			cursor: pointer
+			list-style-type: none
+			padding-bottom: 2px
+			a
+				font-family: 'Arial', sans-serif
+				text-decoration: none
+				color: #545454
+				&:hover
+					color: #292929
+			&.active
+				border-bottom: 2px solid $main
+				a
+					color: #292929
+.disable_scroll
+	position: relative
+	overflow: hidden
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+.title
+	font-weight: 400
+	font-size: 35px
+	color: #545454
+	letter-spacing: 0.06em
+	line-height: 130%
+	text-align: center
+	&_light
+		margin-top: 15px
+		letter-spacing: 0.06em
+		color: #FFFFFF
+		text-align: left
+.pets
+	padding-top: 200px
+	padding-bottom: 100px
+	background-color: #F6F6F6
+	&__wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__catalog
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(4, 270px)
+		grid-auto-columns: 270px
+		justify-content: center
+		gap: 30px 40px
+		margin-top: 60px
+	&__card
+		background: #FAFAFA
+		border-radius: 9px
+		&:hover
+			background: #fff
+			box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+		&:hover > .btn_catalog
+			background: $main
+			border: 2px solid $main
+	&__name
+		text-align: center
+		margin-top: 26px
+		font-weight: 400
+		font-size: 20px
+		line-height: 23px
+		letter-spacing: 0.06em
+		color: #545454
+	&__navigation
+		margin-top: 60px
+		display: flex
+		width: 340px
+		height: 52px
+		justify-content: space-between
+	&__cover
+		position: fixed
+		top: 0
+		left: 0
+		height: 100vh
+		width: 100%
+		display: none
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: rgba(41, 41, 41, 0.6)
+		text-align: center
+		&.active
+			display: flex
+	&__modal
+		display: flex
+		position: relative
+		width: 900px
+		height: 500px
+		background: #FAFAFA
+		border-radius: 9px
+		justify-content: center
+		&:hover
+			box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+		&_photo
+			width: 500px
+			height: 500px
+		&_content
+			padding: 50px 20px 80px 30px
+			display: flex
+			flex-direction: column
+			align-items: start
+			color: #000000
+	&__name
+		&_modal
+			font-size: 35px
+			color: #000000
+	&__breed
+		font-family: 'Georgia'
+		font-size: 20px
+		line-height: 115%
+		letter-spacing: 0.06em
+		margin-top: 15px
+	&__descr
+		margin-top: 40px
+		font-size: 15px
+		line-height: 110%
+		letter-spacing: 0.06em
+		text-align: left
+	&__list
+		margin-top: 40px
+		font-size: 15px
+		line-height: 110%
+		letter-spacing: 0.06em
+		li
+			display: flex
+			list-style-type: none
+			margin-bottom: 11px
+			font-weight: bold
+			span
+				font-weight: normal
+			&::before
+				content: "•"
+				color: $main
+				padding-right: 10px
+.btn
+	display: block
+	width: 187px
+	height: 52px
+	border: 2px solid $main
+	border-radius: 100px
+	background-color: #FAFAFA
+	color: #292929
+	margin: 30px auto
+	font-weight: 400
+	font-size: 17px
+	cursor: pointer
+	letter-spacing: 0.06em
+	&:hover
+		border: none
+		background-color: $hover_btn
+	&_nav
+		font-size: 20px
+		margin: 0
+		width: 52px
+		display: flex
+		justify-content: center
+		align-items: center
+	&_number
+		background-color: $main
+		&:hover
+			background-color: $main
+	&.inactive
+		cursor: default
+		background-color: #F6F6F6
+		color: #CDCDCD
+		border: 2px solid #CDCDCD
+		&:hover
+			border: 2px solid #CDCDCD
+			background-color: #F6F6F6
+	&_modal
+		position: absolute
+		top: -95px
+		right: -35px
+		width: 52px
+		height: 52px
+		border: 2px solid #F1CDB3
+		border-radius: 100px
+		background: transparent
+		&:hover > .pets__cover
+			background-color: $hover_btn
+.footer
+	min-height: 350px
+	background: url('../img/Footer-cover.jpg') center center/cover no-repeat
+	padding-top: 40px
+	&__wrapper
+		display: grid
+		grid-template-columns: 280px 302px 300px
+		column-gap: 160px
+	&__item
+		margin-top: 41px
+	&__link
+		display: flex
+		text-decoration: none
+		font-weight: 400
+		font-size: 20px
+		line-height: 115%
+		letter-spacing: 0.06em
+		color: $main
+		img
+			margin-right: 20px
+	&__marker
+		display: flex
+		margin-top: 34px
+	&__text
+		margin-left: 20px
+		font-weight: 400
+		font-size: 20px
+		line-height: 115%
+		letter-spacing: 0.06em
+		color: $main
+		text-decoration: none
+.hamburger 
+	position: absolute
+	top: 49px
+	right: 43px
+	height: 22px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-start
+	cursor: pointer
+	span 
+		display: block
+		width: 30px
+		height: 2px
+		background: #000
+
+@import 'base/_media-pets'
